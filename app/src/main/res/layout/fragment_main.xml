@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainFragment"
+    tools:showIn="@layout/activity_main">
+
+    <ImageView
+        android:id="@+id/user_profile_image"
+        android:layout_width="@dimen/profile_image_length"
+        android:layout_height="@dimen/profile_image_length"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/default_margin"
+        android:contentDescription="@string/string_user_profile_image_description"
+        android:src="@mipmap/ic_user_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/delete_button"
+        android:layout_below="@id/user_profile_image"
+        android:layout_marginEnd="@dimen/default_margin"
+        android:layout_marginStart="@dimen/default_margin"
+        android:orientation="vertical">
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/UserTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_name_title" />
+
+            <TextView
+                android:id="@+id/user_name"
+                style="@style/UserInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_default_name" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/UserTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_phone_number_title" />
+
+            <TextView
+                android:id="@+id/phone_number"
+                style="@style/UserInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="@string/string_default_phone_number"
+                tools:text="@string/string_test_phone_number" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/UserTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string_email_address_title" />
+
+            <TextView
+                android:id="@+id/email_address"
+                style="@style/UserInfoText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="email"
+                android:text="@string/string_default_email"
+                tools:text="@string/string_test_email" />
+        </LinearLayout>
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+    <Button
+        android:id="@id/delete_button"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/default_button_height"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/default_margin"
+        android:background="@drawable/delete_button_background"
+        android:text="@string/string_delete"
+        android:textColor="@color/red" />
+</RelativeLayout>
