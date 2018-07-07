@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">The User Entity</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_refresh">Refresh</string>
+
+    <string name="string_delete">Delete</string>
+    <string name="string_user_profile_image_description">User\'s Profile Image</string>
+    <string name="string_refresh_icon_description">Refresh Icon</string>
+
+    <string name="string_name_title">Name:</string>
+    <string name="string_email_address_title">Email Address:</string>
+    <string name="string_phone_number_title">Phone Number:</string>
+
+    <string name="string_test_phone_number">+18765555555</string>
+    <string name="string_test_email">test@email.com</string>
+
+    <string name="string_default_name">N/A</string>
+    <string name="string_default_email">N/A</string>
+    <string name="string_default_phone_number">N/A</string>
+
+
+    <string name="string_get_user_info_fail">Failed To Retrieve User\'s Information</string>
+    <string name="string_delete_user_success">Successfully Deleted User</string>
+    <string name="string_delete_user_fail">Failed To Delete User</string>
+</resources>
